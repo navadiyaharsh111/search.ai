@@ -1,0 +1,112 @@
+  .mainmain{
+    background-color: rgb(87, 6, 140);
+  }
+  .mainsection{
+    background: no-repeat left/cover url(https://uc5296510a2e1f94db653f6300f0.previews.dropboxusercontent.com/p/thumb/AB20jHtWIK70KD1mnSz7VxKAg0N3_IdoYuf_rPGkBzNy2FUWGyXmK7Ll_F_y3TCMueL1KelEQatA3MTnb-tsgK_JpaaplSWvgob7M3K3BJLYb_oHsTA4OBPMP7j8PGnCtg4JlS-tfJo5W_in3Re5BGYEF9f4ilz6C0hVHTbUkW68YRC-k4gKnEWMoMsGffgV8abi15O8E6JxfRFIrfRvJr-u1rE9gQysAY37q17rA8Me87R_PZdWzNeU2NwSft9ea4rQMPCR-5nBKwustruVXMnL66hdCaINMgZdu-hiN6eH6Wp-WH1OoTWsQGG-Z1_FNzsmUtWZd0-e7UiZgn0aQunhAGAOWx8ZXhjCXN_1g6u4cunvC1R3WgMw3rcfwEkNm4iK51Da1bXq5fSbNUcZPYbJwJjZGO7z33eQEyln7b9rcVYav_84BA-g6L58jLIgA4jUudLu7ttkMpTo1snBFmf5_eZ2AIkikZQOKVb2CW0o8zOkq-SAMzY4OJZ83plpFMt0oUFmdmecfDwFv_bkZlBwO-3KoINcyucmhmEpPUhdWw/p.jpeg);
+    width: 800px;
+    height: 450px;
+    margin: 100px;
+    border-radius: 30px;
+    box-shadow: 1px 10px 8px 1px #dcdcdc;
+  }
+  .child{
+    position: absolute;
+    margin: 35px 115px 0;
+  }
+  .bar{
+    border-radius: 25px;
+    margin:0 auto;
+    width:575px;
+    border:1px solid #dcdcdc;
+    background-color: floralwhite;
+  }
+  .bar:hover{
+    box-shadow: 1px 10px 8px 1px #dcdcdc;
+  }
+  .bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+  }
+  .searchbar{
+    background-color: floralwhite;
+    height:45px;
+    border:darkblue;
+    width:500px;
+    font-size:16px;
+    outline: none;  
+  }
+
+  header.page-header {
+    background: no-repeat left/cover url(https://img2.storyblok.com//f/64062/1400x583/d02a2178b2/copy-of-storyblok-graphic-background-images-crimson-education.png);
+    /* display: flex; */
+    border-radius: 30px;
+    height: 120px;
+    min-width: 100px;
+    align-items: center;
+    color: #fff;
+    text-shadow: #000 0 0 2em;
+    margin: 20px;
+  }
+
+  header.page-header > h1 {
+    font: bold calc(1em + 2 * (70vw - 120px) / 50) 'Gotham', Bold,
+        fantasy;
+    margin: 20%;
+  }
+
+  .voice{
+    height:20px;
+    position:relative;
+    top:5px;
+    left:10px;
+  }
+  .buttons{
+    border-radius: 25px;
+    margin-top:30px;
+  }
+  .button{
+    background-color: floralwhite;
+    border:none;
+    color:#707070;
+    font-size:15px;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius:20px;
+    outline:none;
+  }
+  .button:hover{
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
+    color:darkcyan;
+  }
+  .button:focus{
+    border:1px solid #4885ed;
+    padding: 9px 19px;
+  }
+  
+  .container {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+  }
+  
+  
+  .container img {
+     width: 100%;
+     height: 100%;
+  }
+  
+  .horizontal{
+      grid-column: span 2;
+  }
+  .vertical {
+      grid-row: span 2;
+  }
+
+  .big{
+      grid-column: span 2;
+      grid-row: span 2;
+  }
