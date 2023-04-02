@@ -43,14 +43,14 @@ def lambda_handler(event, context):
         'labels':custom_labels
     }
     
-    host = "search-photos-gjro5ckeottkt2muv67hzeig6m.us-east-1.es.amazonaws.com"
+    host = "search-photos-gjro5ckeottkt2muv67*******.us-east-1.es.amazonaws.com"
     
     es_payload=json.dumps(format).encode("utf-8")
     
     esClient = Elasticsearch(
         hosts=[{'host': host, 'port':443}],
         use_ssl=True,
-        http_auth=('user', 'Universal@123'),
+        http_auth=('user', 'U********l@***'),
         verify_certs=True,
         connection_class=RequestsHttpConnection)
         
