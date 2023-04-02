@@ -20,7 +20,7 @@ function searchFromVoice() {
 
 function search() {
   var searchTerm = document.getElementById("searchbar").value;
-  var apigClient = apigClientFactory.newClient({ apiKey: "nNfKhGV8Je2klLCyEc2iT7RVKJ02nq434ea7ttEB" });
+  var apigClient = apigClientFactory.newClient({ apiKey: "nNfKhGV8Je2klLCyEc2iT7R**********" });
 
 
     var body = { };
@@ -67,7 +67,7 @@ function showImages(res) {
       if(classname){newimg.classList.add();}
       
       filename = results[i].substring(results[i].lastIndexOf('/')+1)
-      newimg.src = "https://bucekt-2-2.s3.amazonaws.com/"+filename;
+      newimg.src = "https://b*******.s3.amazonaws.com/"+filename;
       newDiv.appendChild(newimg);
     }
   }
@@ -112,11 +112,11 @@ function previewFile(input) {
     else {
       encodedStr = encoded.substring(32, last_index_quote);
     }
-    var apigClient = apigClientFactory.newClient({ apiKey: "nNfKhGV8Je2klLCyEc2iT7RVKJ02nq434ea7ttEB" });
+    var apigClient = apigClientFactory.newClient({ apiKey: "nNfKhGV8Je2klLCyEc2iT7RV*************" });
 
     var params = {
         "key": name,
-        "bucket": "bucekt-2-2",
+        "bucket": "bu*******",
         "Content-Type": "image/*",
     };
 
