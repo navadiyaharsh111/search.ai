@@ -76,13 +76,13 @@ def get_labels(query):
 
     
 def get_photo_path(keys):
-    host="search-photos-gjro5ckeottkt2muv67hzeig6m.us-east-1.es.amazonaws.com"
+    host="search-photos-gjro5ckeo***************.us-east-1.es.amazonaws.com"
 
     
     es = Elasticsearch(
         hosts=[{'host': host, 'port':443}],
         use_ssl=True,
-        http_auth=('user', 'Universal@123'),
+        http_auth=('user', 'Un*******'),
         verify_certs=True,
         connection_class=RequestsHttpConnection)
         
@@ -100,6 +100,6 @@ def get_photo_path(keys):
              for val in r['hits']['hits']:
                 key = val['_source']['objectKey']
                 if key not in output:
-                    output.append('s3://bucekt-2-2/'+key)
+                    output.append('s3://bu*********/'+key)
     # print (output)
     return output  
